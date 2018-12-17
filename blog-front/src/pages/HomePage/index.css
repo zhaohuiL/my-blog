@@ -1,0 +1,147 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-size:14px;
+    color:#666;
+    list-style:none;
+}
+.nav{
+    width:100%;
+    height:90px;
+    padding:15px 0;
+    top:0;
+    left:0;
+    transition: height .3s;
+}
+.nav .nav-list a{
+    transition: color 0.3s;
+}
+.nav .nav-list a:hover{
+    color:#19abd6;
+}
+.header{
+    position: relative;
+    width:100%;
+    height:350px;
+    background:center no-repeat;
+    background-size:cover;
+}
+.header::before{
+    content:'';
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color:rgba(64,84,90,0.6);
+}
+
+
+.page-info{
+    position: absolute;;
+    left:0;
+    top:calc(50% + 45px);
+    transform:translateY(-50%);
+    display: block;
+    width:100%;
+    text-align: center;
+}
+@keyframes pageInfoMove
+{
+   0%{
+       font-size:10px;
+       top:-80px;
+       color:rgba(255,255,255,0.2);
+   }
+   75%{
+       font-size:30px;
+       color:rgba(255,255,255,.5);
+   }
+   100%{
+       color:rgba(255,255,255,1);
+   }
+}
+@keyframes pageInfoPMove
+{
+   0%{
+       top:100px;
+       color:rgba(255,255,255,0.01);
+   }
+  
+   100%{
+       color:rgba(255,255,255,1);
+   }
+}
+.page-info h1{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-180%);
+    font-size:30px;
+    font-weight: 700;
+    color:#fff;
+    animation:  pageInfoMove 1s;
+}
+.page-info hr{
+    margin:20px auto;
+    height:2px;
+    width:160px;
+    border:0;
+    color:#19abd6;
+    background:linear-gradient(to right,#19abd6 35%,#3ac0e8 100%);
+}
+.page-info p{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translateX(-50%) translateY(180%);
+    font-size:14px;
+    color:#fff;
+    animation: pageInfoPMove 1s;
+}
+.main-body{
+    position: relative;
+    margin:0 auto;
+    padding:80px 15px 0 15px;
+    display: flex;
+}
+@media screen and (min-width: 980px) {
+    .main-body{
+        width:950px;
+    }
+    .main-container{
+        flex:1;
+    }
+    .main-apart{
+        width:260px;
+    }
+    .aticle-body{
+        width:300px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .main-body{
+        width:1250px;
+    }
+    .aticle-body{
+        width:290px;
+    }
+}
+.main-container{
+    float:left;
+    flex:1;
+}
+.main-apart{
+    float:right;
+    width:260px;
+}
+
+.aticle-body{
+    float:left;
+    margin:0 30px 30px 0;
+    height: 350px;
+    position: relative;
+}
+.main-apart{
+    width:260px;
+    margin:0;
+}

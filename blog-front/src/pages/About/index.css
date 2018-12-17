@@ -1,0 +1,82 @@
+.about{
+    width:100%;
+}
+.about-header{
+    width:100%;
+    height:60px;
+    position: relative;
+}
+.about-nav{
+    width:100%;
+    height:60px;
+    position: fixed;
+    z-index:99;
+    background:linear-gradient(to right,#19abd6 35%,#3ac0e8 100%);
+}
+.about-nav .nav-list a{
+    transition: color 0.3s;
+}
+.about-nav .nav-list a:hover{
+    color:#0e627b;
+}
+/* .about-main-body{
+
+} */
+.about-container{
+    flex: 1;
+}
+.about-container h3{
+    font-weight: 400;
+    color:#242f35;
+    font-size:22px;
+    margin-bottom:21px;
+}
+.about-quote{
+    margin-bottom:21px;
+    position:relative;
+    padding:1.5em;
+    border-left:5px solid #e4e4e4;
+    background-color:rgba(164,177,191,.1);
+    overflow: hidden;
+}
+.about-container>p{
+    margin-bottom:21px;
+}
+.about-quote p{
+    float: left;
+}
+.about-quote a,
+.about-list a,
+.about table a{
+    text-decoration: none;
+    color:#19abd6;
+    transition: color .3s;
+}
+.about-quote a:hover,
+.about-list a:hover,
+.about table a:hover{
+    text-decoration: underline;
+    color:#3ac0e8;
+}
+.about-list{
+    margin-bottom: 21px;
+}
+.about-list li{
+    list-style: disc;
+    list-style-position: inside;
+}
+.about table{
+    width:100%;
+    border:1px solid #d8e5f3;
+    border-collapse: collapse;
+    display: table;
+    border-spacing: 2px;
+}
+.about table td,.about table th{
+    padding:0.5em;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+.about table th{
+    font-weight: 700;
+}

@@ -1,0 +1,131 @@
+.aside-search-box{
+    display:block;
+    width:100%;
+    height:44px;
+    padding:8px 46px 8px 20px;
+    outline:0;
+    border:none;
+    border-radius: 22px;
+    -webkit-appearance: none;
+    background:rgba(164,177,191,.15);
+    transition:box-shadow .3s;
+    box-shadow: none;
+}
+.aside-search-box:hover{
+    box-shadow: inset 0 0 0 2px #3ac0e8;
+}
+.aside-search-box:focus{
+    box-shadow: inset 0 0 0 2px #3ac0e8;
+}
+.aside-search {
+    position: relative;
+}
+.aside-search i{
+    display: block;
+    position: absolute;
+    width:16px;
+    height:16px;
+    right:20px;
+    top:14px;
+    background:url(../../assets/search.png) no-repeat;
+}
+.aside-title{
+    position: relative;
+    color:#242f35;
+    font-size:16px;
+    padding-left:16px;
+    margin:20px auto 20px;
+    font-weight: 400;
+    height:20px;
+    line-height:20px;
+}
+.aside-title::before{
+    content:'';
+    display: block;
+    position: absolute;
+    width:4px;
+    height:100%;
+    top:0;
+    left:0;
+    background:linear-gradient(to bottom,#19abd6 35%,#3ac0e8 100%) left center no-repeat;
+}
+.aside-apart-content div{
+    width:100%;
+    padding:10px 0;
+    border-bottom:1px dotted #d8e5f3;
+}
+.aside-apart-content div a{
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.aside-apart-content div a:hover{
+    color:#19abd6;
+}
+.aside-apart-content span{
+    color:#19abd6;
+}
+.aside-new-content a{
+    display: flex;
+    align-items: center;
+    width:100%;
+    text-decoration: none;
+    color:#242f35;
+    margin-top:10px;
+}
+.aside-new-content-img{
+    position:relative;
+    display: block;
+    width:80px;
+    height:60px;
+    overflow: hidden;
+}
+.aside-new-content-img img{
+    height:100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: block;
+}
+.aside-new-content-dec{
+    display:block;
+    padding:8px 15px;
+    line-height:1.4;
+}
+.aside-new-content-dec p{
+    margin:0;
+    font-weight:400;
+    font-size:14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: color .3s;
+}
+.aside-new-content a:hover .aside-new-content-dec p{
+    color:#19abd6;
+}
+.aside-new-content-dec div{
+    font-size:12px;
+    color:#666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.aside-tag-content a{
+    float: left;
+    margin:5px 10px 0 0;
+    display: block;
+    height:34px;
+    border:2px solid #d8e5f3;
+    border-radius:34px;
+    font-size:12px;
+    line-height:24px;
+    color:#242f35;
+    padding:4px 10px;
+    text-decoration: none;
+    transition: color 0.3s, border-color .3s;
+}
+.aside-tag-content a:hover{
+    color:#19abd6;
+    border-color:#19abd6;
+}
